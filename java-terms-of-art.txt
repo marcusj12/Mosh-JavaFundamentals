@@ -1,0 +1,40 @@
+ Anatomy of a Java Program:
+
+Defintions:
+3. Method - a method is a function that is apart of class
+class Main {
+    void main () {
+    }
+}
+2. Class - A container for one or more related functions; helps organize codes.
+
+class Main {
+    void main () {
+    }
+}
+
+* the functions between a  class is a method*
+
+1. Function - A function is the smallest block of code in java that can perform a specific task; n java.
+      void main () {
+        }
+
+*main is the entry point to java programs*
+Whenever a java program is run the main function is called and the code inside gets executed
+*a funciton should never be alone and should always belong to a class*
+
+All classes and methods should have a access modifier- a special keyword that determines if other classes and methods
+can access these classes and methods  ex( public & private)
+Ex:
+ public class Main {
+    public void main() {
+
+    }
+ }
+
+ When naming classes we use the PascalNamingConvention
+ When naming methods we use the camelNamingConvention
+
+Field -
+Variable -
+
