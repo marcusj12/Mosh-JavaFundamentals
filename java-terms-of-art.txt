@@ -38,3 +38,24 @@ Ex:
 Field -
 Variable -
 
+How Java Gets Executed:
+
+There are two steps that contribute to executable code;
+1. Compilation - InteliJ uses the java compilers; to compile code into a different format: (java byte code)
+2. Execution
+
+the java byte code is run independant if you have a JRE (Java Runtime Enviroment)
+
+JRE - has a software component known as JVM (Java Virtual Machine) takes java byte code to the native code of the
+underlying operating system.
+
+Compiled Machine language - Directly translate the program without any assistance. This language is directly converted
+into machine code; which is usally faster and more efficient than interpreted languages Ex: C, C++, Rust
+
+Interpreted Language - Not directly translated but instead used a different program known as
+a "interpreter", to read and execute code. They run through lines of code 1 by 1 ; and allow users to edit code without
+having to rewrite everything Ex: JavaScript, Python, Ruby, PHP
+*Typically more flexible but slower*
+
+
+Data Types:
