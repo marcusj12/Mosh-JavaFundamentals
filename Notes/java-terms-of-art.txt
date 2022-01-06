@@ -1,0 +1,90 @@
+ Anatomy of a Java Program:
+
+Defintions:
+3. Method - a method is a function that is apart of class
+class Main {
+    void main () {
+    }
+}
+2. Class - A container for one or more related functions; helps organize codes.
+
+class Main {
+    void main () {
+    }
+}
+
+* the functions between a  class is a method*
+
+1. Function - A function is the smallest block of code in java that can perform a specific task; n java.
+      void main () {
+        }
+
+*main is the entry point to java programs*
+Whenever a java program is run the main function is called and the code inside gets executed
+*a funciton should never be alone and should always belong to a class*
+
+All classes and methods should have a access modifier- a special keyword that determines if other classes and methods
+can access these classes and methods  ex( public & private)
+Ex:
+ public class Main {
+    public void main() {
+
+    }
+ }
+
+ When naming classes we use the PascalNamingConvention
+ When naming methods we use the camelNamingConvention - capatilize the first letter of every word except the first word
+
+Field -
+Variable -
+
+How Java Gets Executed:
+
+There are two steps that contribute to executable code;
+1. Compilation - InteliJ uses the java compilers; to compile code into a different format: (java byte code)
+2. Execution
+
+the java byte code is run independant if you have a JRE (Java Runtime Enviroment)
+
+JRE - has a software component known as JVM (Java Virtual Machine) takes java byte code to the native code of the
+underlying operating system.
+
+Compiled Machine language - Directly translate the program without any assistance. This language is directly converted
+into machine code; which is usally faster and more efficient than interpreted languages Ex: C, C++, Rust
+
+Interpreted Language - Not directly translated but instead used a different program known as
+a "interpreter", to read and execute code. They run through lines of code 1 by 1 ; and allow users to edit code without
+having to rewrite everything Ex: JavaScript, Python, Ruby, PHP
+*Typically more flexible but slower*
+
+DEFINITIONS:
+OOP - (Object Oriented Programming) Typically used in programming to as containers that house data and methods
+Inheritance - A hierarchy of classes that share a set of attributes and methods. Access Modifiers define what classes can access (attributes or method).
+Encapsulation - The idea of building data and methods that work on data within a unit… aka a “class’ This process can also be used to hide internal representation or state of an object. Also known as “Information Hiding” . You disguise an attribute and make invisible from the outside of an object, and combine it with methods that provide read and write access… allowing specific information and control access to the internal state of the object
+Abstraction- a concept that shows only essential attributes and “hide” unnecessary information/details from the user. Selecting data from a larger pool and showing only relevant details of the object to the user.
+ Ex: Make a list of info that you would need in an application to start a bank account.
+Name
+Age
+Address
+Tax Info
+Favorite color
+Favorite Cereal
+Favorite food
+		*Some info is absolutely necessary for a banking application & some is not. We can still use the additional info but not in this context*
+Polymorphism - Describes situations in which something occurs in several different forms.
+All classes extend the class object; so all objects in java are polymorphic because they pass two instanceof checks
+Static Polymorphism - implement multiple methods within the same class that uses the same name. Method overloading
+Dynamic Polymorphism - occurs when there are one or more classes or objects related to each other by inheritance. Inheritance lets users inherit attributes and methods… polymorphism uses these methods to perform different task and communicate
+
+Mosh Videos; A-02-02 Variables
+
+- Variables are used to temporarily whole values
+
+public static void main(String[] args) {
+    int age = 30;
+    System.out.println(age);
+}
+    - Declare a variable; in this case int represents whole numbers (no decimals points)
+    - We name the variable which also known as  the "identifier
+    - the "=" sign is an assignment operator
+    - We're intialize the variable at value of 30
