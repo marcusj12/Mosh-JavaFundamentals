@@ -87,4 +87,11 @@ public static void main(String[] args) {
     - Declare a variable; in this case int represents whole numbers (no decimals points)
     - We name the variable which also known as  the "identifier
     - the "=" sign is an assignment operator
-    - We're intialize the variable at value of 30
+    - We're initialize the variable at value of 30
+
+References Types:
+
+Primitive: numbers, characters, booleans - for storing simple values
+byte, short, int, long, float, double, char, boolean
+Reference: date, mail message - for storing complex objects
+
