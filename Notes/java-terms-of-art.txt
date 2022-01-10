@@ -76,7 +76,7 @@ All classes extend the class object; so all objects in java are polymorphic beca
 Static Polymorphism - implement multiple methods within the same class that uses the same name. Method overloading
 Dynamic Polymorphism - occurs when there are one or more classes or objects related to each other by inheritance. Inheritance lets users inherit attributes and methods… polymorphism uses these methods to perform different task and communicate
 
-Mosh Videos; A-02-02 Variables
+Mosh Videos; Data Types
 
 - Variables are used to temporarily whole values
 
@@ -94,4 +94,126 @@ References Types:
 Primitive: numbers, characters, booleans - for storing simple values
 byte, short, int, long, float, double, char, boolean
 Reference: date, mail message - for storing complex objects
+
+A string is also known as a string literal
+
+-Escape Sequences:
+*How to include special characters within a string*:
+Ex1:
+public class Main {
+    public static void main (String[] args) {
+        String message = "Hello \"Mosh\""; - if we add a double quote, we have to use backslashes
+        System.out.pringln(message);
+    }
+}
+**Will Return** : Hello " Mosh"
+
+Ex2: Lets say we wanted to add a file directory:
+public class Main {
+    public static void main (String[] args) {
+        // c:\Windows\...
+        String message = "c:\\Windows\\..."; - notice that there are two backslashes but only one prints
+        System.out.pringln(message);
+    }
+}
+**Will Return** :
+c:\Windows\...
+
+Ex3: Adding a new line to strings:
+public class Main {
+    public static void main (String[] args) {
+        // c:\Windows\...
+        String message = "c:\nWindows\\..."; - Used to add new lines to strings
+        System.out.pringln(message);
+    }
+}
+**Will Return** :
+c:
+Windows\...
+
+Ex 4: Adding a new tab:
+public class Main {
+    public static void main (String[] args) {
+        // c:\Windows\...
+        String message = "c:\tWindows\\..."; - Used to add new lines to strings
+        System.out.pringln(message);
+    }
+}
+**Will Return** :
+c:  Windows\...
+
+
+                ------*****Arrays*****-------:
+    "Use to arrays to store a list of items like; people, items, food"
+
+public class Main {
+    public static void main (String[] args) {
+     int[] numbers  = new int[5];
+     numbers[0]  = 1;
+     numbers[1] = 2;
+
+     System.out.println(Arrays.toString(numbers)); We use this class called arrays & we use the .notation to access various methods
+    }
+}
+
+
+**Will Return**
+[1,2,0,0,0] The zeros are default values since we did not input any values for the 5 things within the array.
+If this was a boolean array, the default would be false
+If this was a string array, the  default would be empty strings
+
+----**More Efficient way of creating arrays; typically when you know  the values beforehand
+public class Main {
+    public static void main (String[] args) {
+     int[] numbers  = {2,3,5,1,4};
+     System.out.println(numbers.length);
+   }
+}
+**Will return** :
+5
+[2,3,5,1,4]
+**Arrays have a fixed length; this array is **
+.notaion options can be overloaded based on the number of parameter types
+
+Ex: Print out the numbers in order using sort() method:
+
+public class Main {
+    public static void main (String[] args) {
+         int[] numbers  = {2,3,5,1,4};
+         Arrays.sort(numbers);
+         System.out.println(Arrays.toString(numbers));
+   }
+}
+** Will Return**
+[1,2,3,4,5]
+
+                -----****Multi-Dimensional Arrays***-----
+public class Main {
+    public static void main (String[] args) {
+    int[][] numbers = new int [2][3]; - the number of arrays and the lengths of each dimension
+           numbers[0][0] = 1;
+         System.out.println(Arrays.deepToString(numbers));
+   }
+}
+** Will Return**
+[[1,0,0], [0,0,0]]
+"A multidimensional Array"
+
+
+public class Main {
+    public static void main (String[] args) {
+    int[][] numbers = { { 1, 2, 3}, { 4, 5, 6} }
+         System.out.println(Arrays.deepToString(numbers));
+   }
+}
+
+**Will Return**
+[[1, 2, 3], [4, 5, 6]]
+
+
+
+
+
+
+
 
