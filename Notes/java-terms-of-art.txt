@@ -1,4 +1,4 @@
- Anatomy of a Java Program:
+  Anatomy of a Java Program:
 
 Defintions:
 3. Method - a method is a function that is apart of class
@@ -296,10 +296,80 @@ What are methods?
         - Getter/Setters; best practice to create a getter and setter for fields rather than accessing/assigning them.
             Specifically designed to upate a field value
     Fields vs Methods:
-        -
 
 
+       ----**** Jan 12, 2022 Class; Java Challenge #4 ***----
+       - Once a standard java array is created, we cannot .push or .shift
+       -
 
+                    ----- **** Jan 18, 2022 Class - What is an instance? **** ------
+Types of methods:
+    Allows the program to create new instance of a class (objects).
+    Best practice to create a getter and setter for fields rather than accessing/assigning them.
+    A constructor is a method that takes parameters based on all of the fields the constructor is designed to assign for the class object instance; avoids manually inputting fields into our constructor
+    getters - are meant to return the value of a given field
+
+/*
+What is a class?
+- A class in java is like a blueprint/ instruction guides for something to be done or created.
+- To create or declare a class in Java. We must create a new file with the name of the class you are tryiing to create.
+        class Example{} - Declared a class using the "class" keyword. Similar to "var"
+Fields
+- How we describe the properties or variables of a class.
+- Fields are defined at the top layer of the class
+        class Example {
+            int exampleNum;// this is field declaration
+            String exampleStr = "example";// this is a field declaration and assignment
+         }
+Methods
+- How we describe the function or actions a class can execute
+Ex:
+    class Example {
+       public static void exampleMethod(){
+       System.out.println("Hello Example");
+       }
+     }
+Types of methods
+    - Constructors: allow the program to create new instance of the class (objects); there is a constructor predefined
+    when you do not create one, however this default constructor will not assign any field value
+        - A method that takes parameters based on all of the fields the constructor is designed to assign for the class's object instance
+        - The constructor method will have the same name as the class and only used with one modifier
+        1. access modifier; (public or private)
+        2. return type; data-type that the method returns (void, string, int, any data-type really)
+        3. Method name;
+Ex:
+    class Example {
+        public String name;
+        public int age;
+        public Example (String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+    }
+ *Calling a constructor* : once defined within a class you can now use it throughout your code, as long as its accesible based on the modifer
+           - Always called forward folliwng the "new" keyword to assign a new variable or be called in line
+    - Getters/Setters: it is best to create a gett  er and setter for fields rather than accessing/assigning them directly.
+Ex:
+    class Main {
+        public static void main (String[] args){
+            Example myExample = new Example
+            System.out.println(myExample.name);
+        }
+    }
+
+Creating Object Instances :
+    - Calling a class's constructor method and creating an object instance are one in the same
+    - Compare the class's constructor to a blueprint and instructions for building a house; the object instance would be
+      the completed house
+
+Definitions:
+Class/Blueprint - Decides what the data type is (fields) and what it can do (methods)
+Constructor/Factory - Defines how the object instance is made , what inputs are required parameters
+Object/instance - Item created from your class/blueprint; we say that a object instance is a variable, often a way to
+store data
+Instance(noun) - an example or single occurence of something
+
+ */
 
 
 
